@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: coral
+}
+
+h1:hover {
+    color: darkgoldenrod
+}
+
+body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    border: 2px solid black;
+    width: fit-content;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.item {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    transition: 0.4s ease;
+    cursor: pointer;
+
+}
+
+.box1,
+.box2 {
+    display: flex;
+
+}
+
+.box1>.item:nth-child(even) {
+    background-color: black;
+}
+
+.box2>.item:nth-child(odd) {
+    background-color: black;
+}
+
+.item:hover {
+    font-size: 60px;
+}
+
+.item2 {
+    color: lightslategray;
+}
+
+.item3 {
+    color: lightslategray;
+}
